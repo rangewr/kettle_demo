@@ -2,7 +2,7 @@
  * @Author: wangran
  * @Date: 2020-06-04 15:07:43
  * @LastEditors: wangran
- * @LastEditTime: 2020-06-05 09:44:51
+ * @LastEditTime: 2020-06-17 10:04:15
  */
 package com.kettle.demo.controller;
 
@@ -29,7 +29,7 @@ public class KettleController {
         // 可以把文件放到resources目录下面，然后用hutool读取这文件
         // File file = FileUtil.file("33.ktr");
         // 这是我本地进行测试的，所以我把文件放到了桌面上了，写了根目录
-        File file = FileUtil.file("C:\\Users\\Administrator\\Desktop\\deskTopFolder\\springboot_kettle.ktr");
+        File file = FileUtil.file("C:/Users/Administrator/workspace/vsCode/XADPwdManage/files/ad9899a0dfcdeb07c464af8e487d52e6/tempfile.txt.ktr");
         String path = file.getPath();
         StepPluginType.getInstance().getPluginFolders().add(new PluginFolder(
                 "E:\\迅雷下载\\pdi-ce-8.2.0.0-342\\data-integration\\plugins\\steps\\pentaho-kafka-producer", false, true));
